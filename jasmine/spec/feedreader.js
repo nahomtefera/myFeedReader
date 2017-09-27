@@ -67,7 +67,14 @@ $(function() {
           * clicked and does it hide when clicked again.
           */
         it('is shown/hidden on click', function(){
-
+            let menuIcon = $('.menu-icon-link');
+            
+            menuIcon.click();
+            expect($("body").attr("class")).toEqual("");
+            
+            menuIcon.click();
+            expect($("body").attr("class")).toEqual("menu-hidden");
+            
         });
     });
 
