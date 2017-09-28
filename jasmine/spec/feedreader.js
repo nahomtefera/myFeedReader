@@ -28,8 +28,10 @@ $(function() {
         it('have a URL defined', function(){
             for(let i = 0; i < allFeeds.length; i++){
                 expect(allFeeds[i].url).toBeDefined();
+                expect(allFeeds[i].url.length).not.toBeLessThan(1);
             }
         });
+        
 
         /* Test that loops through each feed
          * in the allFeeds object and ensures it has a name defined
@@ -38,6 +40,7 @@ $(function() {
         it('have a name defined', function(){
             for(let i = 0; i < allFeeds.length; i++){
                 expect(allFeeds[i].name).toBeDefined();
+                expect(allFeeds[i].name.length).not.toBeLessThan(1);
             }
         });
 
