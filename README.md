@@ -7,7 +7,7 @@ This is a project that helps us learn how to use Jasmine to test a feed reader a
 In order to install it in your computer clone it with git and open index.html file in your browser to play the game.
 
 ```
-git clone https://github.com/nahomtefera/myMemoryGame.git
+git clone https://github.com/nahomtefera/myFeedReader.git
 cd myMemoryGame
 start index.html
 ```
