@@ -77,18 +77,15 @@ $(function() {
          * a single .entry element within the .feed container.
          */
          beforeEach(function(done){
-            setTimeout(function() {
                 loadFeed(0, function(){
                     done();
                 });
-              }, 1);
             
          });
 
-         it('should give at least a single entry element', function(done) {
+         it('should give at least a single entry element', function() {
             let loadedContent = $(".feed").find(".entry").length;
             expect(loadedContent).not.toBeLessThan(0);      
-            done();
          });
 
     });
@@ -98,22 +95,19 @@ $(function() {
         /* Test that ensures when a new feed is loaded
          * by the loadFeed function that the content actually changes.
          */
-        let feedContent;
+        let initialContent;
         beforeEach(function(done){
-            setTimeout(function(){
                 loadFeed(0, function(){
                     initialContent = $(".feed").html();
                     loadFeed(1,function(){
                         done();
                     });
                 });
-            }, 1);
         });
 
-        it('changes when new feed is loaded', function(done){
+        it('changes when new feed is loaded', function(){
             let newContent = $(".feed").html();
             expect(initialContent).not.toBe(newContent);
-            done();
         });
     });
          
