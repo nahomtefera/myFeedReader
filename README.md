@@ -24,22 +24,22 @@ https://jasmine.github.io/
 
 Once you open the Index file in your browser you will see that we have several tests.
 
-* RSS Feeds
+### RSS Feeds
 
 - Test one will check that we actually have feeds to show.
 - Test two will iterate through each feed and check that they have a correct url.
 - Test three will chake that each feed has a title.
 
-* The menu
+### The menu
 
 - Test one will check that the menu is hidden by default
 - Test two will check that the menu will appear and dissapear by clickin in the menu icon.  
 
-* Initial Entries
+### Initial Entries
 
 - The test will check that when the function that loads feeds is done, there should be at least 1 entry.
 
-* New Feed Selection
+### New Feed Selection
 
 - The test will check that when a new feed is loaded the content of the feed container changes.
 
