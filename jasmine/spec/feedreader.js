@@ -124,7 +124,7 @@ $(function() {
         });
 
         it('changes when new feed is loaded', function(done){
-            let newContent = $(".feed").html()
+            let newContent = $(".feed").html();
             expect(initialContent).not.toBe(newContent);
             done();
         });
