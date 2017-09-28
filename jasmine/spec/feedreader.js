@@ -62,10 +62,10 @@ $(function() {
             let menuIcon = $('.menu-icon-link');
             
             menuIcon.click();
-            expect($("body").attr("class")).toEqual("");
+            expect($("body").hasClass("menu-hidden")).toBe(false);
             
             menuIcon.click();
-            expect($("body").attr("class")).toEqual("menu-hidden");
+            expect($("body").hasClass("menu-hidden")).toBe(true);
             
         });
     });
